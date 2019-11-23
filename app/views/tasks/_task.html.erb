@@ -1,0 +1,3 @@
+<p><%= task.description %> | <%= task.deadline %></p>
+<p><%= link_to "Edit", edit_task_path(task), remote: true %></p>
+<p><%= link_to "Destroy", task, remote: true, method: :delete, data:{confrom: "Are you sure"} %></p>
