@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Tasks</h1>
+<div class="page-header">
+  <h1>Tasks</h1>
+</div>
 
 <div id="tasks">
   <%= render @tasks %>
@@ -9,7 +11,9 @@
 <br>
 
 <!-- Makes an AJAX call to do the new thing with the remote: true -->
-<%= link_to 'New Task', new_task_path, remote: true %>
+<div>
+  <%= link_to 'New Task', new_task_path, remote: true, class: 'btn btn-lg btn-primary' %>
+</div>
 
 <div id="task-form" style="display:none;">
 

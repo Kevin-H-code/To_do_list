@@ -1,3 +1,11 @@
-<p><%= task.description %> | <%= task.deadline %></p>
-<p><%= link_to "Edit", edit_task_path(task), remote: true %></p>
-<p><%= link_to "Destroy", task, remote: true, method: :delete, data:{confrom: "Are you sure"} %></p>
+<div style="font-size: 18px;">
+<%= task.description %>
+</div>
+<div>
+  <%= task.deadline %>
+  <%= link_to "Edit", edit_task_path(task), remote: true, class: 'btn btn-lg btn-info' %>
+  <%= link_to "Destroy", task, remote: true, method: :delete, data:{ confrom: "Are you sure" }, class: 'btn btn-lg btn-warning' %>
+</div>
+<hr>
+<br>
+<br>

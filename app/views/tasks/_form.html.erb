@@ -1,16 +1,20 @@
 <%= form_with(model: @task, remote: true) do |form| %>
-
+<br>
+<br>
+<hr>
   <div class="field">
     <%= form.label :description %>
     <%= form.text_field :description %>
   </div>
 
-  <div class="field">
-    <%= form.label :deadline %>
-    <%= form.datetime_select :deadline %>
+<!-- change from field to form-group and added class: 'form-control' -->
+  <div class="form-group">
+    <%= form.label :deadline, class: 'form-control' %>
+    <%= form.datetime_select :deadline, class: 'form-control' %>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <hr>
+<!-- changed from actions to form-group and added "submit" to form.submit added BS elements to tags -->
+  <div class="form-group">
+    <%= form.submit 'Submit', class: 'btn btn-lg btn-primary'%>
   </div>
 <% end %>
