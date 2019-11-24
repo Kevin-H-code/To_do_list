@@ -2,15 +2,15 @@
 <br>
 <br>
 <hr>
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
     <%= form.text_field :description %>
   </div>
-
+<br>
 <!-- change from field to form-group and added class: 'form-control' -->
   <div class="form-group">
-    <%= form.label :deadline, class: 'form-control' %>
-    <%= form.datetime_select :deadline, class: 'form-control' %>
+    <%= form.label :deadline %>
+    <%= form.datetime_select :deadline %>
   </div>
   <hr>
 <!-- changed from actions to form-group and added "submit" to form.submit added BS elements to tags -->

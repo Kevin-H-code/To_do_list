@@ -4,7 +4,7 @@
 <div>
   <%= task.deadline %>
   <%= link_to "Edit", edit_task_path(task), remote: true, class: 'btn btn-lg btn-info' %>
-  <%= link_to "Destroy", task, remote: true, method: :delete, data:{ confrom: "Are you sure" }, class: 'btn btn-lg btn-warning' %>
+  <%= link_to "Destroy", task, remote: true, method: :delete, data: { confirm: "Are you sure" }, class: 'btn btn-lg btn-warning' %>
 </div>
 <hr>
 <br>
